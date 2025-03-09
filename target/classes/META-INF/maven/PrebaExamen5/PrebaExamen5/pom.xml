@@ -29,7 +29,7 @@
 						<configuration>
 							<headerType>gui</headerType>
 							<outfile>
-								${project.build.directory}/$MyInterface.exe</outfile>
+								${project.build.directory}/MyInterface.exe</outfile>
 							<jar>
 								${project.build.directory}/${project.build.finalName}.jar</jar>
 							<errTitle>App Error</errTitle>
@@ -49,6 +49,7 @@
 			<url>https://repo1.maven.org/maven2/</url>
 		</repository>
 	</repositories>
+
 
 </project>
 
