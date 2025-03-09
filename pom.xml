@@ -12,5 +12,31 @@
         <scope>test</scope>
     </dependency>
     </dependencies>
+    
+    <build>
+    <plugins>
+        <!-- Plugin para convertir el JAR en EXE -->
+        <plugin>
+            <groupId>net.sf.launch4j</groupId>
+            <artifactId>launch4j-maven-plugin</artifactId>
+            <version>2.4.0</version>
+            <configuration>
+                <headerType>gui</headerType>
+                <jar>target/PrebaExamen5-0.0.1-SNAPSHOT.jar</jar>
+                <outfile>target/SwingApp.exe</outfile>
+                <errTitle>Error en la Aplicación</errTitle>
+                <cmdLine></cmdLine>
+                <chdir>.</chdir>
+                <priority>normal</priority>
+                <downloadUrl>http://java.com/download</downloadUrl>
+                <supportUrl>http://www.miapp.com</supportUrl>
+                <stayAlive>false</stayAlive>
+                <manifest>
+                    <mainClass>main.MyInterface</mainClass>
+                </manifest>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 </project>
 
